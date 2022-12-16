@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Righteous&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>DE-VE-DE</h1>
+        <div id="searchbardiv">
+            <input type="text" placeholder="search for title" id="searchinput">
+            <button id="searchbutton">Search</button>
+        </div>
+    </header>
+
+    <div id="searchdiv"></div>
+    <main>
+        <div id="moviediv">
+            <br>
+            <h2>Add a movie to your watchlist</h2>
+            <input type="text" placeholder="Title" id="title">
+            <input type="text" placeholder="Genre" id="genre">
+            <input type="number" placeholder="Release date" id="date">
+            <button id="addmovie">Add movie</button>
+            <br>
+            <br>
+            <h2>See your watchlist</h2>
+            <button id="displaybutton">See watchlist</button>
+            <br>
+        </div>
+    </main>
+    <div id="watchlistDiv">
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

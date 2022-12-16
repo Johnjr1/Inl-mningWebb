@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    font-family: 'Righteous', cursive;
+}
+
+button {
+    font-family: 'Righteous', cursive;
+    border-style: none;
+    padding: .5rem;
+    background-color: rgb(192, 192, 192);
+    margin: 1rem;
+    border-radius: .2rem;
+    font-size: 1.2rem;
+}
+
+input {
+    padding: .5rem;
+    border-radius: .2rem;
+    border-style: none;
+    font-size: 1.2rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    font-size: 1.2rem;
+    background-color: #eee;
+}
+
+header {
+    background-color: rgb(238, 204, 14);
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+#watchlistDiv {
+    margin-top: 1rem;
+    background-color: rgb(224, 224, 224);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+    width: 60%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+#watchlistDiv li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    grid-column: span 2;
+    background-color: rgba(238, 204, 14, 0.147);
+}
+
+#watchlistDiv section {
+    grid-column: 1/7;
+    text-align: center;
+}
+
+#moviediv {
+    margin-top: 1rem;
+    background-color: rgb(224, 224, 224);
+    width: 64.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#moviediv h2 {
+    padding: 1rem;
+}
+
+#searchdiv {
+    margin-top: 1rem;
+    background-color: rgb(224, 224, 224);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 60%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+#searchdiv li {
+    width: 50%;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: rgba(238, 204, 14, 0.147);
+}
+
+#searchbardiv button {
+    margin-left: 0;
+}
